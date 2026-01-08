@@ -1,0 +1,179 @@
+/* ==================================================
+   RESET & BASE
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* ==================================================
+   HEADER / NAV
+================================================== */
+header {
+    background-color: #ffffff;
+}
+
+header a {
+    color: #111827;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+header nav a {
+    font-size: 0.95rem;
+}
+
+/* ==================================================
+   HERO
+================================================== */
+.hero {
+    max-width: 900px;
+    padding: 3rem 3rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #9ca3af;
+    max-width: 600px;
+}
+
+/* ==================================================
+   ABOUT
+================================================== */
+.about-mini {
+    max-width: 700px;
+    padding: 0 3rem 2rem;
+}
+
+.about-mini p {
+    font-size: 1rem;
+    color: #d1d5db;
+    margin-bottom: 1rem;
+}
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.about-tags span {
+    background: #111827;
+    border: 1px solid #1f2933;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+/* ==================================================
+   PROJECTS
+================================================== */
+.projects {
+    padding: 3rem;
+}
+
+.projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ==================================================
+   PROJECT CARD
+================================================== */
+.project-card {
+    background-color: #111827;
+    padding: 1.5rem;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #1f2933;
+    transition: all 0.25s ease;
+}
+
+.project-card h3,
+.project-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 0.75rem;
+}
+
+.project-card span {
+    font-size: 0.75rem;
+    color: #38bdf8;
+}
+
+/* Hover */
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+/* Disabled / Coming soon */
+.project-card.disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.project-card.disabled:hover {
+    transform: none;
+    border-color: #1f2933;
+}
+
+.coming-soon {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+.footer {
+    padding: 2rem 3rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero,
+    .projects,
+    .about-mini {
+        padding: 2rem 1.5rem;
+    }
+}
