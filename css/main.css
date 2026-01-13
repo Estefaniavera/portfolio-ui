@@ -281,3 +281,68 @@ header .container {
         display: none;
     }
 }
+
+/* =========================
+   EDUCATION & CERTIFICATIONS
+========================= */
+
+.education-section {
+    padding: 4rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.education-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.edu-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.edu-item span {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.edu-item p {
+    margin-top: 0.8rem;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.cert-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cert-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.cert-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
